@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Record Player</title>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="header">
+      <h1 class="title">Record Player</h1>
+    </div>
+    <div class="player">
+      <div class="record">
+        <div class="label"></div>
+      </div>
+      <div class="tone-arm">
+        <div class="control"></div>
+      </div>
+      <button class="btn"></button>
+      <div class="slider-container">
+        <input
+          type="range"
+          class="slider"
+          min="0"
+          max="1"
+          step="0-1"
+          value="0.7"
+        />
+      </div>
+    </div>
+
+    <select id="songSelect">
+      <option value="/mp3/Nothing But Thieves - Overcome (Official Video).mp3">
+        Overcome - Nothing But Thieves
+      </option>
+      <option
+        value="/mp3/The Weeknd, JENNIE & Lily Rose Depp - One Of The Girls (Official Audio).mp3"
+      >
+        One Of The Girls - The Weeknd
+      </option>
+      <option
+        value="/mp3/Rick Astley - Never Gonna Give You Up (Official Music Video).mp3"
+      >
+        Never gonna give you up - Rick Ashley
+      </option>
+    </select>
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>
